@@ -37,7 +37,6 @@ model.compile(optimizer='adam',
 model.summary()
 
 
-
 # callback: 
 cp_callback = keras.callbacks.LambdaCallback(
     on_epoch_end = lambda epoch, logs: print(logs)
