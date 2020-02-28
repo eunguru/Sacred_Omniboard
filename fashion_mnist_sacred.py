@@ -6,7 +6,6 @@ from tensorflow import keras
 
 from sacred import Experiment
 from sacred.observers import MongoObserver
-from sacred.randomness import get_seed
 
 ex = Experiment('fashion_mnist')
 ex.observers.append(MongoObserver.create(url='localhost:27017',
